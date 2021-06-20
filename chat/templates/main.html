@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Django Channels WebRTC</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+</head>
+<body>
+	<button id="btn-toggle-details" class="btn btn-dark">Details</button>
+	<button id="btn-toggle-muteall" class="btn btn-dark">Mute Me</button>
+	
+	<input type="textfield" placeholder="Enter comma seperated Ids to be muted" id="mutesome" name="mutesome">
+	<button id="mutethese" class="btn btn-dark">Mute These</button>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
